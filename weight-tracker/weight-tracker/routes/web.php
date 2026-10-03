@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\WeightController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('weights.index');
 });
+
+Route::resource('weights', WeightController::class);
