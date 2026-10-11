@@ -51,13 +51,16 @@
                 </a>
 
                 <!-- EP08 Auth -->
-                <a href="{{ url('/login') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
-                    <div>
-                        <strong>EP08 Auth</strong>
-                        <div class="text-muted small">ปุ่ม Login</div>
-                    </div>
-                    <span class="btn btn-danger btn-sm">Login</span>
-                </a>
+              <div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <strong>EP08 Auth</strong>
+        <div class="text-muted small">ปุ่ม Login และ Register</div>
+    </div>
+    <div class="d-flex gap-2">
+        <a href="{{ route('login') }}" class="btn btn-danger btn-sm">Login</a>
+        <a href="{{ route('register') }}" class="btn btn-secondary btn-sm">Register</a>
+    </div>
+</div>
             </div>
         </div>
     </div>
